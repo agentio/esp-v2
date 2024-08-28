@@ -2,7 +2,7 @@ name: Publish docker images
 
 on:
   schedule:
-    - cron: '0 0 * * 1' # each Monday 12:00 UTC
+    - cron: '0 12 1 * *' # 12:00 UTC on the first day of each month
   push:
     branches: [ main ]
     tags: [ 'v*.*.*' ] # semver release
